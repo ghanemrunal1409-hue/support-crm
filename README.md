@@ -1,29 +1,27 @@
 # Support CRM
 
-A full-stack Customer Support Ticket Management System built as a technical assessment for Datastraw Technologies.
+A full-stack Support CRM system built as part of the AI + Tech Intern technical assessment for Datastraw Technologies.
+
+## Live Demo
+
+- Frontend: https://support-crm-snowy.vercel.app/
+- Backend API: https://support-crm-owpi.onrender.com/
+- API Health Check: https://support-crm-owpi.onrender.com/
 
 ## Features
 
-- Create customer support tickets
-- Automatically generate unique ticket IDs
-- Automatically record ticket creation timestamps
-- View all support tickets
-- Search tickets by:
-  - Ticket ID
-  - Customer name
-  - Customer email
-  - Subject
-  - Description
-- Filter tickets by status:
-  - Open
-  - In Progress
-  - Closed
+- Create support tickets
+- Automatic ticket ID generation
+- Automatic ticket timestamp
+- View all tickets
+- Search tickets by customer name, ticket ID, email, subject, or description
+- Filter tickets by status
 - View complete ticket details
 - Update ticket status
 - Add notes/comments to tickets
-- Responsive and clean user interface
-- SQLite database persistence
-- REST API backend
+- Responsive web interface
+- REST API integration
+- SQLite database
 
 ## Tech Stack
 
@@ -38,30 +36,30 @@ A full-stack Customer Support Ticket Management System built as a technical asse
 
 - Node.js
 - Express.js
+- REST API
 - CORS
-- better-sqlite3
 
 ### Database
 
 - SQLite
+- better-sqlite3
 
 ## Project Structure
 
 ```text
 support-crm/
-├── routes/
-│   └── ticketRoutes.js
 ├── frontend/
 │   ├── src/
 │   │   ├── App.jsx
 │   │   ├── App.css
 │   │   └── main.jsx
 │   ├── package.json
-│   └── package-lock.json
+│   └── vite.config.js
+├── routes/
+│   └── ticketRoutes.js
 ├── database.js
 ├── server.js
 ├── package.json
-├── package-lock.json
 ├── .env.example
 ├── .gitignore
 └── README.md
